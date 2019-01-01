@@ -4,7 +4,7 @@ var myAge: number = 24;
 var canVote: boolean = true;
 var anything: any = "dog";
 anything = 2;
-//const PI = 3.14159;
+const PI = 3.14159;
 
 document.getElementById("tsStuff").innerHTML = "My name is " + myName;
 
@@ -74,13 +74,13 @@ document.write("--randomNumber = " + --randomNumber + "<br />"); // returns 1
 // One thing that is different however is the 'let' operator: Variables defined with 'let' inside of a block dont change the value of variables outside of the block
 
 //Example:
-//let sampleLet = 123;
+let sampleLet = 123;
 
-//if(true) {
-    //let sampleLet = 456;
-//}
+if(true) {
+    let sampleLet = 456;
+}
 
-//document.write("sampleLet : " + sampleLet + "<br />"); // WILL NOT CHANGE
+document.write("sampleLet : " + sampleLet + "<br />"); // WILL NOT CHANGE
 
 var sampleVar = 123;
 
@@ -286,7 +286,7 @@ function theSum(x, y, z): void {
 
 var args = [4, 5, 6];
 
-// theSum(...args);
+theSum(...args);
 
 // Numerated types
 enum Emotion {
